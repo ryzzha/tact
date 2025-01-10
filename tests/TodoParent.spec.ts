@@ -61,7 +61,7 @@ describe('TodoParent', () => {
 
         const firstTodoDetail = await todoChild.getDetails();
 
-        console.log(firstTodoDetail);
+        // console.log(firstTodoDetail);
 
         const completeMessage: CompleteTodo = {
             $$type: 'CompleteTodo',
@@ -78,7 +78,7 @@ describe('TodoParent', () => {
 
         const firstTodoDetailAfter = await todoChild.getDetails();
 
-        console.log(firstTodoDetailAfter);
+        // console.log(firstTodoDetailAfter);
     });
 
     it('should can complete todo', async () => {});
