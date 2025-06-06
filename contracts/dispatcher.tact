@@ -13,7 +13,7 @@ message MultiplyMessage {
 
 message NegateMessage {
     num: Int;
-}
+} 
 
 message ResultMessage {
     res: Int;
