@@ -1,6 +1,6 @@
 import "@stdlib/ownable";
 
-message AddContactMessage {
+message AddContactMessage { 
     address: Address;
 }
 message RemoveContactMessage {
@@ -29,9 +29,7 @@ contract ContactBook with Ownable {
     owner: Address;
     book: map<Address, ContactBookStat>;
     length: Int as uint8;
-    // Empty init() function is present by default in all Tact contracts
-    // since v1.3.0, so the following may be omitted:
-    //
+  
     init(owner: Address, book: map<Address, ContactBookStat>, length: Int) {
         self.owner = owner;
         self.book = book;
